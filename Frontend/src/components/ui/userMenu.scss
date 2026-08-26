@@ -1,0 +1,98 @@
+.user-menu {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    z-index: 100;
+    display: inline-flex;
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #ff4d6d, #c9184a);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+        &:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 0 0 3px rgba(255, 77, 109, 0.25);
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        min-width: 220px;
+        background: #1a1f27;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        padding: 8px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+        z-index: 50;
+        animation: user-menu-fade-in 0.15s ease;
+    }
+
+    &__info {
+        padding: 10px 12px;
+    }
+
+    &__name {
+        margin: 0;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__email {
+        margin: 4px 0 0;
+        color: #9aa4b2;
+        font-size: 12px;
+    }
+
+    &__divider {
+        height: 1px;
+        background: rgba(255, 255, 255, 0.08);
+        margin: 6px 4px;
+    }
+
+    &__logout {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: none;
+        border: none;
+        color: #ff6b81;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: left;
+        transition: background 0.15s ease;
+
+        &:hover {
+            background: rgba(255, 77, 109, 0.12);
+        }
+    }
+}
+
+@keyframes user-menu-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
