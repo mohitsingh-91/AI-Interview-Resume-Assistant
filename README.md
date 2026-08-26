@@ -1,5 +1,10 @@
 # AI Interview Resume Assistant
 
+## Demo
+
+https://ai-interview-resume-assistant.vercel.app
+
+
 ## 📌 Overview
 An AI-powered full-stack web application that generates personalized interview reports and job-tailored resumes based on a job description and the user's resume or self-description.
 
@@ -70,7 +75,7 @@ GEN_AI_FULLSTACK_PROJECT/
 
 ### 1. Clone the repository
 ```bash
-git clone <your-github-repository-url>
+git clone https://github.com/mohitsingh-91/AI-Interview-Resume-Assistant.git
 ```
 
 ### 2. Backend Setup
