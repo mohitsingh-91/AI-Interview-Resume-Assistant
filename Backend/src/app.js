@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
     origin: ["http://localhost:5173","https://ai-interview-resume-assistant.vercel.app",
-      "https://ai-interview-resume-assistant-7sxv5muv3-mohit-singh1.vercel.app"],
+      "https://ai-interview-resume-assistant-lx4w3jr5e-mohit-singh1.vercel.app"],
     credentials: true,
   })
 );
