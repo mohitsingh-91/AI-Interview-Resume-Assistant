@@ -1,4 +1,4 @@
-# AI Interview Report Generator
+# AI Interview Resume Assistant
 
 ## 📌 Overview
 An AI-powered full-stack web application that generates personalized interview reports and job-tailored resumes based on a job description and the user's resume or self-description.
