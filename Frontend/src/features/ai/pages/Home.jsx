@@ -2,7 +2,7 @@ import  { useState, useRef,useEffect } from 'react'
 import "../styles/home.scss";
 import { useInterview } from '../hooks/useInterview.js'
 import { useNavigate } from 'react-router'
-import UserMenu from '../../../components/ui/userMenu.jsx';
+import UserMenu from '../../../components/ui/Usermenu.jsx';
 import Loader from "../../../components/ui/Loader.jsx"
 
 

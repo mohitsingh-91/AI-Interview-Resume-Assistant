@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react'
 import '../styles/interview.scss';
 import { useInterview } from '../hooks/useInterview.js'
 import {  useParams } from 'react-router'
-import UserMenu from '../../../components/ui/userMenu.jsx';
+import UserMenu from '../../../components/ui/Usermenu.jsx';
 import Loader from "../../../components/ui/Loader.jsx"
 
 
