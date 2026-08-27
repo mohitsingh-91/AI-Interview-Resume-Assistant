@@ -51,13 +51,14 @@ An AI-powered full-stack web application that generates personalized interview r
 - Google Gemini API
 
 ## 📁 Project Structure
+
 ```
 GEN_AI_FULLSTACK_PROJECT/
 │
 ├── Backend/
 │   ├── src/
-│   ├── .env
 │   ├── .gitignore
+│   ├── package-lock.json
 │   ├── package.json
 │   └── server.js
 │
@@ -65,7 +66,11 @@ GEN_AI_FULLSTACK_PROJECT/
 │   ├── public/
 │   ├── src/
 │   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
 │   ├── package.json
+│   ├── vercel.json
 │   └── vite.config.js
 │
 └── README.md
@@ -110,6 +115,13 @@ PORT=your_port_no
 MONGODB_URL=your_mongodb_connection_string
 JWT_SECRET_KEY=your_jwt_secret_key
 GOOGLE_GENAI_API_KEY=your_gemini_api_key
+NODE_ENV=
+```
+The frontend requires environment variables for configuration.
+
+Create a `Frontend/.env` file with the following:
+```
+VITE_API_URL=
 ```
 
 
