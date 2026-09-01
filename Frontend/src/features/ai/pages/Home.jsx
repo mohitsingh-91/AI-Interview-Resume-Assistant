@@ -55,7 +55,7 @@ const Home = () => {
     return (
         <div className='home-page'>
 
-        {/* Top Bar */}
+        {/* Top Bar */} 
         <UserMenu />
 
         {/* Page Header */}
@@ -83,7 +83,7 @@ const Home = () => {
                         placeholder={`Paste the full job description here...\ne.g. 'Senior Frontend Engineer at Google requires proficiency in React, TypeScript, and large-scale system design...'`}
                         maxLength={5000}
                     />
-                    <div className='char-counter'>0 / 5000 chars</div>
+                    <div className='char-counter'> {jobDescription.length} / 5000 chars</div>
                 </div>
 
                 {/* Vertical Divider */}
